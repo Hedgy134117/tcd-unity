@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93907008cab1d114b97240d3e971b2e7, type: 3}
+  m_Name: Happy Hope
+  m_EditorClassIdentifier: 
+  name: Happy Hope
+  description: Thot alert wee woo wee woo Happy Hope is here to thot it up.
+  use: Happy Sun!!!!!!!!!!!!!!!
+  image: {fileID: 21300000, guid: 53308892423387e438a8d3e1d47375de, type: 3}
+  pointsToAdd: 2

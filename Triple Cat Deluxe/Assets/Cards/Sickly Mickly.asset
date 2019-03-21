@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93907008cab1d114b97240d3e971b2e7, type: 3}
+  m_Name: Sickly Mickly
+  m_EditorClassIdentifier: 
+  name: Sickly Mickly
+  description: They couldn't save him from the last of it.
+  use: adds 1 point
+  image: {fileID: 21300000, guid: c488ae8bd4b0f244d973c4013bc84558, type: 3}
+  pointsToAdd: 1
