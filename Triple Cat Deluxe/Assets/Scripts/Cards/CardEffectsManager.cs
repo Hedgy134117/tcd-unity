@@ -9,19 +9,24 @@ public class CardEffectsManager : MonoBehaviour {
     public GameObject cardManager;
     private List<GameObject> cards;
 
+    // get cats and p1/p2
     public CatManager catManager;
     private GameObject p1;
     private GameObject p2;
 
+    // boolean for whether or not the effect was applied already
     public bool effectApplied;
 
+    // specific values for specific cards
     [Header("Effect Values")]
     public float meowSpeed;
     public float meowAmount;
 
+    // any assets from the area
     [Header("SampleGame Assets")]
     public GameObject floor;
 
+    // any other assets needed (such as ones for card effects)
     [Header("Other Assets")]
     public GameObject ratsHolder;
     public GameObject[] rats;
@@ -48,8 +53,10 @@ public class CardEffectsManager : MonoBehaviour {
 
     void Start()
     {
+        // get cards
         cards = cardManager.GetComponent<CardsManager>().Cards;
 
+        // get p1/p2
         if (GameObject.Find("CatManager") != null)
         {
             catManager = GameObject.Find("CatManager").GetComponent<CatManager>();
@@ -58,6 +65,7 @@ public class CardEffectsManager : MonoBehaviour {
         }
         else
         {
+            // if there is no cat manager (aka no one selected players) then it will default to Sausage and Queso
             p1 = GameObject.Find("Sausage");
             p2 = GameObject.Find("Queso");
         }
@@ -65,12 +73,13 @@ public class CardEffectsManager : MonoBehaviour {
 
     private void OnEnable()
     {
+        // when the round starts the effect has not been applied
         effectApplied = false;
     }
 
     void Update()
     {
-
+        // look at each card, if the card is the one that was just drawn then apply an effect based off of the name of that card
         foreach (var card in cards)
         {
             if (card.tag == "currentCard")
@@ -88,12 +97,14 @@ public class CardEffectsManager : MonoBehaviour {
             switch (effect)
             {
                 case "The Absolute Stronk":
+                    // 2x size
                     p1.transform.localScale *= 2;
                     p2.transform.localScale *= 2;
                     effectApplied = true;
                     break;
 
                 case "Jimmy Jr.":
+                    // rats (10)
                     ratsHolder.SetActive(true);
                     foreach (var rat in rats)
                     {
@@ -103,6 +114,7 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "Sickly Mickly":
+                    // make the cats green
                     p1.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
                     p2.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
 
@@ -117,6 +129,7 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "Rocky (alias)":
+                    // let cats fly but the power of gravity will increased by 0.01 every frame
                     p1.GetComponent<PlayerOneMovement>().flyingEnabled = true;
                     p2.GetComponent<PlayerTwoMovement>().flyingEnabled = true;
 
@@ -129,18 +142,21 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "You are nothing":
+                    // 0.5x size
                     p1.transform.localScale *= 0.5f;
                     p2.transform.localScale *= 0.5f;
                     effectApplied = true;
                     break;
 
                 case "Fwuffy":
+                    // ceiling
                     ceilingHolder.SetActive(true);
                     ceilingObject.SetActive(true);
                     effectApplied = true;
                     break;
 
                 case "Fwuffy Jr.":
+                    // raise the floor until it is about 3 on the Y
                     if (floor.transform.position.y < 3)
                     {
                         floor.transform.position += new Vector3(0f, 0.01f, 0f);
@@ -156,6 +172,7 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "Back Alley Christmas Lights":
+                    // 2x speed/jump
                     p1.GetComponent<PlayerOneMovement>().speed *= 2;
                     p1.GetComponent<PlayerOneMovement>().jumpHeight *= 2;
                     p2.GetComponent<PlayerTwoMovement>().speed *= 2;
@@ -164,18 +181,21 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "God's Cat":
+                    // bible
                     godsCat.SetActive(true);
 
                     effectApplied = true;
                     break;
 
                 case "Jimmy":
+                    // whatever this one does i forgot im at school
                     jimmy.SetActive(true);
 
                     effectApplied = true;
                     break;
 
                 case "Scrub a Dub Tub":
+                    // make the floor slippery
                     floor.GetComponent<BoxCollider2D>().sharedMaterial = slippyMaterial;
 
                     effectApplied = true;
@@ -186,41 +206,48 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "A sad man":
+                    // 0.25x speed
                     p1.GetComponent<PlayerOneMovement>().speed *= 0.25f;
                     p2.GetComponent<PlayerTwoMovement>().speed *= 0.25f;
                     effectApplied = true;
                     break;
 
                 case "Texas Rodeo":
+                    // tumbleweeds
                     texasRodeo.SetActive(true);
 
                     effectApplied = true;
                     break;
 
                 case "Happy Hope":
+                    // change background
                     bg.sprite = happyHopeBg;
                     effectApplied = true;
                     break;
 
                 case "Poppy Poor":
+                    // make the cats X Scale 0.75 giving a malnurished look
                     p1.transform.localScale = new Vector3(p1.transform.localScale.x * 0.75f, p1.transform.localScale.y, p1.transform.localScale.z);
                     p2.transform.localScale = new Vector3(p2.transform.localScale.x * 0.75f, p2.transform.localScale.y, p2.transform.localScale.z);
                     effectApplied = true;
                     break;
 
                 case "Studious Sam":
+                    // binary code
                     studiousSam.SetActive(true);
 
                     effectApplied = true;
                     break;
 
                 case "Kitty Korner":
+                    // walls
                     kittyKorner.SetActive(true);
 
                     effectApplied = true;
                     break;
 
                 case "A Cat that Just Yawns":
+                    // 0.5x speed
                     p1.GetComponent<PlayerOneMovement>().speed *= 0.5f;
                     p2.GetComponent<PlayerTwoMovement>().speed *= 0.5f;
                     effectApplied = true;
@@ -231,11 +258,14 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "Nice Kitty":
+                    // make cats slowly go towards eachother
+                    // Vector3.MoveTowards(object, target, speed)
                     p1.transform.position = Vector3.MoveTowards(p1.transform.position, p2.transform.position, 0.05f);
                     p2.transform.position = Vector3.MoveTowards(p2.transform.position, p1.transform.position, 0.05f);
                     break;
 
                 case "Cowboy":
+                    // cowboy whatever he does
                     cowboy.SetActive(true);
 
                     effectApplied = true;
@@ -246,6 +276,7 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "Molecule Mack":
+                    // .25x cat size
                     p1.transform.localScale *= 0.25f;
                     p2.transform.localScale *= 0.25f;
                     effectApplied = true;
@@ -256,6 +287,7 @@ public class CardEffectsManager : MonoBehaviour {
                     break;
 
                 case "?̸̢̨̱̼̼̻̠̱̦̈́͛̓̏̿́̋̑̀̑͊͛͜͝?̴̧̠͉͈̫̣̯͙͇͇̅̆͌̽̚?̸̧̨̻̭͈̥̻̪̯̣͠?̸̡͖̦̻̖̙̥̺̆̃̅͐̆̈̾̾̇͑ͅ?̴̛͚̰͔́͒?̶͓̩͔̺̱̤̟̥̗̉͝ͅ?̴̩͇̩͙̪͕͖̘̮̺̈͌͗̿̇̎̉͘͘͝?̶̧̩͔̯̲͈̦͚̙̘͖̟͎͗̄̔̿̊̓̍͗͒̆̎̑́̎͋?̶͕̙͓̞̗͚̞̣̀̎̔":
+                    // make the cats Y scale 2.5x giving a disturbed look
                     p1.transform.localScale = new Vector3(p1.transform.localScale.x, p1.transform.localScale.y*2.5f, p1.transform.localScale.z);
                     p2.transform.localScale = new Vector3(p2.transform.localScale.x, p2.transform.localScale.y * 2.5f, p2.transform.localScale.z);
 
