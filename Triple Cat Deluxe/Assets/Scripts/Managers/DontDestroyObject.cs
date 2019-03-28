@@ -8,6 +8,7 @@ public class DontDestroyObject : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	// do not destroy any objects on a new scene load in the objects array
         foreach (var item in objects)
         {
             DontDestroyOnLoad(item);
