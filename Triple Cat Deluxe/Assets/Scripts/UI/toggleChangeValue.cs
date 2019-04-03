@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class toggleChangeValue : MonoBehaviour {
 
+    // variables
     public AllSettings settings;
 
     public void changeValue()
     {
+        // change the settings to if the toggles are on or not (modifiers)
         switch (this.gameObject.name)
         {
             case "ThP toggle":
