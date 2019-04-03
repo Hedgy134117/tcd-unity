@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class catIdentifier : MonoBehaviour {
 
+	// empty script
+	// used to identify cats for catManager
+	
 	// Use this for initialization
 	void Start () {
 		
