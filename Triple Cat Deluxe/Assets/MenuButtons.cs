@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour {
 
+    // enlarge on hover
     public void mouseEnter()
     {
         this.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
@@ -18,6 +19,7 @@ public class MenuButtons : MonoBehaviour {
 
     public void StartButton()
     {
+        // destory all managers and load the character select scene
         if (GameObject.Find("CatManager") != null)
         {
             Destroy(GameObject.Find("CatManager"));
@@ -33,16 +35,19 @@ public class MenuButtons : MonoBehaviour {
 
     public void ControlsButton()
     {
+        // load the controls scene
         SceneManager.LoadScene(SceneUtility.GetBuildIndexByScenePath("_Scenes/ControlsScene"));
     }
 
     public void HTPButton()
     {
+        // load the how to play scene
         SceneManager.LoadScene(SceneUtility.GetBuildIndexByScenePath("_Scenes/IntroScene"));
     }
 
     public void CreditsButton()
     {
+        // load the credits scene
         SceneManager.LoadScene(SceneUtility.GetBuildIndexByScenePath("_Scenes/CreditsScene"));
     }
 
