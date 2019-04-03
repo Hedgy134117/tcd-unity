@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerOneMovement : MonoBehaviour {
 
+    // variables
     public Rigidbody2D rb;
     public float jumpHeight = 6.25f;
     public float speed = 3f;
@@ -14,13 +15,17 @@ public class PlayerOneMovement : MonoBehaviour {
 
     private void Awake()
     {
+	// get rigidbody and set flying to false
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         flyingEnabled = false;
     }
 
     // Update is called once per frame
     void Update () {
-		if(Input.GetKeyDown("w") && floored == true && flyingEnabled == false)
+	// movement
+	// checks if floored so cat can jump
+	// or if flying is enabled then allow infinite jumps
+	if(Input.GetKeyDown("w") && floored == true && flyingEnabled == false)
         {
             rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
             floored = false;
