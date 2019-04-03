@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class resetCharacters : MonoBehaviour {
 
+    // enlarge on hover
     public void mouseEnter()
     {
         this.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
@@ -17,6 +18,7 @@ public class resetCharacters : MonoBehaviour {
 
     public void ResetCharacters()
     {
+        // reload the scene and remove the previous catmanager
         Destroy(GameObject.Find("CatManager"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class applyMinor : MonoBehaviour {
 
+    // variables
     public CatManager catManager;
 
     private bool isApplied;
@@ -39,12 +40,14 @@ public class applyMinor : MonoBehaviour {
 
     public void _ApplyMinor()
     {
+        // get managers
         if (GameObject.Find("CatManager") != null)
         {
             catManager = GameObject.Find("CatManager").GetComponent<CatManager>();
             cats = catManager.cats;
         }
 
+        // apply effect based off of the name of the cat
         isApplied = false;
         if(isApplied == false)
         {
@@ -114,6 +117,7 @@ public class applyMinor : MonoBehaviour {
 
     public void ApplyMinor(float mod1, float mod2, GameObject cat)
     {
+        // apply effects to each player
         if (cat.gameObject.tag == "currentp1")
         {
             cat.gameObject.GetComponent<PlayerOneMovement>().speed *= mod1;

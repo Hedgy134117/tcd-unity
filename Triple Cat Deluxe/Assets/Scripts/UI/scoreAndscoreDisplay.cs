@@ -6,6 +6,7 @@ using TMPro;
 
 public class scoreAndscoreDisplay : MonoBehaviour {
 
+    // variables
     public int P1score;
     public int P2score;
 
@@ -13,6 +14,7 @@ public class scoreAndscoreDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	// the display of the score is P1score : P2score
         text.text = P1score + " : " + P2score;
 	}
 }

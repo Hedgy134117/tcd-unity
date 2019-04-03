@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class WinManager : MonoBehaviour {
 
+    // variables
     public GameObject canvas;
 
     [Header("Managers")]
@@ -42,6 +43,7 @@ public class WinManager : MonoBehaviour {
 
     private void LateUpdate()
     {
+	// get managers
         if (GameObject.Find("SettingsManager") != null)
         {
             settings = GameObject.Find("SettingsManager").GetComponent<AllSettings>();
@@ -70,6 +72,7 @@ public class WinManager : MonoBehaviour {
             // enable winnerCanvas
             canvas.SetActive(true);
 
+	    // if p1 wins then set the win screen to their cat
             if(scoreManager.P1score >= pointsToWin)
             {
                 switch(p1.name)
@@ -123,6 +126,7 @@ public class WinManager : MonoBehaviour {
                         break;
                 }
             }
+	    // if p2 wins then set the win screen to their cat
             else if(scoreManager.P2score >= pointsToWin) 
             {
                 switch (p2.name)
@@ -176,7 +180,8 @@ public class WinManager : MonoBehaviour {
                         break;
                 }
             }
-
+		
+	    // enable the back to start or credits button
             creditsButton.SetActive(true);
         }
 	}

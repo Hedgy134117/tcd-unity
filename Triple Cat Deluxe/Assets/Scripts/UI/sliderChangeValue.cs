@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class sliderChangeValue : MonoBehaviour {
 
+    // variables
     public AllSettings settings;
 
-	public void Update()
+    public void Update()
     {
+	// round the value to 2 decimals
         this.gameObject.GetComponent<Slider>().value = (float)System.Math.Round((double)this.gameObject.GetComponent<Slider>().value, 1);
 
+	// set the settings value to the value of this object
         switch(this.gameObject.name)
         {
             case "PTW slider":
