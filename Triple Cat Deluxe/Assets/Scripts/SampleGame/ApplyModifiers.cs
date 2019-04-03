@@ -18,13 +18,9 @@ public class ApplyModifiers : MonoBehaviour {
     public float catJumps;
     public bool thinPlatform;
 
-    public void OnEnable()
-    {
-        
-    }
-
     public void applyModifiers()
     {
+        // get settings and cats
         if (GameObject.Find("SettingsManager") != null)
         {
             settings = GameObject.Find("SettingsManager").GetComponent<AllSettings>();
@@ -53,15 +49,19 @@ public class ApplyModifiers : MonoBehaviour {
             p2 = queso;
         }
 
+        // multiply cats size by modifier
         p1.transform.localScale *= catSize;
         p2.transform.localScale *= catSize;
 
+        // multiply cats speed by modifier
         p1.GetComponent<PlayerOneMovement>().speed *= catSpeed;
         p2.GetComponent<PlayerTwoMovement>().speed *= catSpeed;
 
+        // multiply cats jumps by modifer
         p1.GetComponent<PlayerOneMovement>().jumpHeight *= catJumps;
         p2.GetComponent<PlayerTwoMovement>().jumpHeight *= catJumps;
 
+        // if thinplatform is true then make the platform 1/4x the thickness
         if (thinPlatform)
         {
             floor.transform.localScale = new Vector3(floor.transform.localScale.x, floor.transform.localScale.y * 0.25f, floor.transform.localScale.z);
