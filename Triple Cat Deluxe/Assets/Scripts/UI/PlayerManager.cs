@@ -5,6 +5,7 @@ using TMPro;
 
 public class PlayerManager : MonoBehaviour {
 
+    // variables
     public CatManager catManager;
 
     public GameObject sausage;
@@ -17,10 +18,14 @@ public class PlayerManager : MonoBehaviour {
 
     private void OnEnable()
     {
+        // if cat manager exists
         if (GameObject.Find("CatManager") != null)
         {
             catManager = GameObject.Find("CatManager").GetComponent<CatManager>();
 
+            // get player one and player 2
+            // if needed add the playerOneMovement script
+            // enable the cats on the enable of sample game
             foreach (var cat in catManager.cats)
             {
                 if (cat.tag == "currentp1")
@@ -41,6 +46,7 @@ public class PlayerManager : MonoBehaviour {
                 }
             }
         } 
+        // otherwise make p1/p2 sausage/queso
         else
         {
             if (sausage.GetComponent<PlayerOneMovement>() == null)
@@ -55,6 +61,8 @@ public class PlayerManager : MonoBehaviour {
             queso.SetActive(true);
         }
 
+        // make each scripts catmanager equal to this catmanager and run their functions
+        // this is needed because the scripts weren't able to find catmanager
         this.GetComponent<WinSampleGame>().catManager = catManager;
         this.GetComponent<WinSampleGame>().GetVariables();
         this.GetComponent<applyMinor>().catManager = catManager;
