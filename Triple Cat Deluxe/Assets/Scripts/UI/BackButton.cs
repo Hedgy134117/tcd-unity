@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BackButton : MonoBehaviour {
 
+    // enlarge on hover
     public void mouseEnter()
     {
         this.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
@@ -17,11 +18,13 @@ public class BackButton : MonoBehaviour {
 
     public void BackToPrevious()
     {
+        // load the previous scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void BackToStart()
     {
+        // delete any managers and load the start scene
         if (GameObject.Find("CatManager") != null)
         {
             Destroy(GameObject.Find("CatManager"));
