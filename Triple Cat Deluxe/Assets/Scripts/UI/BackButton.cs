@@ -17,6 +17,10 @@ public class BackButton : MonoBehaviour {
 
     public void BackToPrevious()
     {
+        if (GameObject.Find("DeveloperModeManager") != null)
+        {
+            Destroy(GameObject.Find("DeveloperModeManager"));
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
@@ -29,6 +33,10 @@ public class BackButton : MonoBehaviour {
         if (GameObject.Find("SettingsManager") != null)
         {
             Destroy(GameObject.Find("SettingsManager"));
+        }
+        if(GameObject.Find("DeveloperModeManager") != null)
+        {
+            Destroy(GameObject.Find("DeveloperModeManager"));
         }
         SceneManager.LoadScene(0);
     }
