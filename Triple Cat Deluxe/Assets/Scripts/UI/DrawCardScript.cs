@@ -16,16 +16,6 @@ public class DrawCardScript : MonoBehaviour {
     // Draw Button
     public Button drawButton;
 
-    public void mouseEnter()
-    {
-        this.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
-    }
-
-    public void mouseExit()
-    {
-        this.transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
-    }
-
     private void Start()
     {
         Cards = cardManager.Cards;
