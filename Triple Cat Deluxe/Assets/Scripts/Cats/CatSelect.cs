@@ -12,17 +12,6 @@ public class CatSelect : MonoBehaviour {
     // currentplayer
     public CurrentPlayer currentPlayer;
 
-    // button enlarge when hover
-    public void mouseEnter()
-    {
-        this.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
-    }
-
-    public void mouseExit()
-    {
-        this.transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
-    }
-
     private void Update()
     {
         // if both players have selected then make this button not clickabe
