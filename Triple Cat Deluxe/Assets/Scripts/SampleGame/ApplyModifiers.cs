@@ -13,9 +13,9 @@ public class ApplyModifiers : MonoBehaviour {
     public GameObject floor;
 
     [Header("Modifiers")]
-    public float catSize;
-    public float catSpeed;
-    public float catJumps;
+    public float catSize = 1f;
+    public float catSpeed = 1f;
+    public float catJumps = 1f;
     public bool thinPlatform;
 
     public void applyModifiers()
@@ -29,12 +29,6 @@ public class ApplyModifiers : MonoBehaviour {
             catSpeed = settings.catSpeed;
             catJumps = settings.catJumps;
             thinPlatform = settings.thinPlatform;
-        }
-        else
-        {
-            catSize = 1f;
-            catSpeed = 1f;
-            catJumps = 1f;
         }
 
         if (GameObject.Find("CatManager") != null)

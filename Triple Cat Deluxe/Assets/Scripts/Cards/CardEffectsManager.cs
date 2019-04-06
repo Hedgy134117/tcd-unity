@@ -54,7 +54,7 @@ public class CardEffectsManager : MonoBehaviour {
     void Start()
     {
         // get cards
-        cards = cardManager.GetComponent<CardsManager>().Cards;
+        cards = cardManager.GetComponent<CardsManager>().TotalCards;
 
         // get p1/p2
         if (GameObject.Find("CatManager") != null)

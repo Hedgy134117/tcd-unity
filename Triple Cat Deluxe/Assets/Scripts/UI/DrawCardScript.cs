@@ -24,10 +24,11 @@ public class DrawCardScript : MonoBehaviour {
 
     private void OnEnable()
     {
-        // Sets all cards to inactive
+        // Sets all cards to inactive and make sure none of the cards are the currentCard
         foreach (var card in totalCards)
         {
             card.SetActive(false);
+            card.tag = "Card";
         }
         // Sets Draw Button to Interactable
         drawButton.interactable = true;
