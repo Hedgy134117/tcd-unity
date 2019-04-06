@@ -9,5 +9,4 @@ public class CardsManager : MonoBehaviour {
 
     // list of the total cards (all of them)
     public List<GameObject> TotalCards;
-
 }
