@@ -18,7 +18,8 @@ public class ApplyModifiers : MonoBehaviour {
     public float catJumps = 1f;
     public bool thinPlatform;
 
-    public void applyModifiers()
+    // the reason this is in its' own function is for devMode
+    public void getVariables()
     {
         // get settings and cats
         if (GameObject.Find("SettingsManager") != null)
@@ -42,6 +43,10 @@ public class ApplyModifiers : MonoBehaviour {
             p1 = sausage;
             p2 = queso;
         }
+    }
+
+    public void applyModifiers()
+    {
 
         // multiply cats size by modifier
         p1.transform.localScale *= catSize;

@@ -18,6 +18,8 @@ public class DevModeModifiers : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        modifiers.getVariables();
+
         devPointsToWin.text = winManager.pointsToWin.ToString();
         devCatSize.text = modifiers.catSize.ToString();
         devCatSpeed.text = modifiers.catSpeed.ToString();
@@ -29,9 +31,9 @@ public class DevModeModifiers : MonoBehaviour {
 	public void Update()
     {
         winManager.pointsToWin = int.Parse(devPointsToWin.text);
-        modifiers.catSize = int.Parse(devCatSize.text);
-        modifiers.catSpeed = int.Parse(devCatSpeed.text);
-        modifiers.catJumps = int.Parse(devCatJumps.text);
+        modifiers.catSize = float.Parse(devCatSize.text);
+        modifiers.catSpeed = float.Parse(devCatSpeed.text);
+        modifiers.catJumps = float.Parse(devCatJumps.text);
         modifiers.thinPlatform = devThinPlatform.isOn;
         DynamicCamera.dynamicCamera = devDynamicCamera.isOn;
     }
