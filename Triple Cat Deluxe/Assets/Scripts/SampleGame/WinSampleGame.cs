@@ -79,7 +79,7 @@ public class WinSampleGame : MonoBehaviour {
             {
                 winner = "P2";
                 // look at all cards and see which one is the current one
-                foreach (var card in cards)
+                foreach (var card in cardManager.TotalCards)
                 {
                     if (card.tag == "currentCard")
                     {
@@ -94,7 +94,7 @@ public class WinSampleGame : MonoBehaviour {
             {
                 winner = "P1";
                 // look at all cards and see which one is the current one
-                foreach (var card in cards)
+                foreach (var card in cardManager.TotalCards)
                 {
                     if (card.tag == "currentCard")
                     {
@@ -110,6 +110,19 @@ public class WinSampleGame : MonoBehaviour {
     {
         if(winner != "")
         {
+            // look at all cards and see which one is the current one
+            foreach (var card in cards.ToArray())
+            {
+                if (card.tag == "currentCard")
+                {
+                    // remove card from cards array(s)
+                    cards.Remove(card);
+                    drawCardObject.GetComponent<DrawCardScript>().Cards.Remove(card);
+                    // reset that card's tag
+                    card.tag = "Card";
+                }
+            }
+
             // toEnable/toDisable
             foreach (var item in toEnable)
             {
@@ -144,19 +157,6 @@ public class WinSampleGame : MonoBehaviour {
 
             // Reset Defaults
             normalReset();
-
-            // look at all cards and see which one is the current one
-            foreach (var card in cards.ToArray())
-            {
-                if (card.tag == "currentCard")
-                {
-                    // remove card from cards array(s)
-                    cards.Remove(card);
-                    drawCardObject.GetComponent<DrawCardScript>().Cards.Remove(card);
-                    // reset that card's tag
-                    card.tag = "Card";
-                }
-            }
         }
     }
 

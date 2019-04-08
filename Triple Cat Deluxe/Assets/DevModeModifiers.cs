@@ -18,7 +18,7 @@ public class DevModeModifiers : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        modifiers.getVariables();
+        modifiers.getSettings();
 
         devPointsToWin.text = winManager.pointsToWin.ToString();
         devCatSize.text = modifiers.catSize.ToString();
