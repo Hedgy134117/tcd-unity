@@ -508,6 +508,7 @@ GameObject:
   - component: {fileID: 98457453}
   - component: {fileID: 98457452}
   - component: {fileID: 98457454}
+  - component: {fileID: 98457456}
   m_Layer: 0
   m_Name: Tumbleweed (2)
   m_TagString: Untagged
@@ -620,6 +621,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &98457456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 98457450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &100588021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2313,7 @@ GameObject:
   - component: {fileID: 254800295}
   - component: {fileID: 254800294}
   - component: {fileID: 254800293}
+  - component: {fileID: 254800296}
   m_Layer: 0
   m_Name: Bible
   m_TagString: Untagged
@@ -2561,6 +2576,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &254800296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254800291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &286665439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,6 +3046,7 @@ GameObject:
   - component: {fileID: 323520100}
   - component: {fileID: 323520099}
   - component: {fileID: 323520098}
+  - component: {fileID: 323520101}
   m_Layer: 0
   m_Name: Hat
   m_TagString: Untagged
@@ -3191,6 +3220,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &323520101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323520096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &325039779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,7 +3442,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Cat Sped
+  m_text: Cat Speed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3476,11 +3518,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3595,6 +3637,7 @@ GameObject:
   - component: {fileID: 375962233}
   - component: {fileID: 375962232}
   - component: {fileID: 375962234}
+  - component: {fileID: 375962236}
   m_Layer: 0
   m_Name: Rat 4 (Jimmy Jr.) (1)
   m_TagString: Untagged
@@ -3717,6 +3760,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &375962236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375962230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &377926015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,6 +4235,7 @@ GameObject:
   - component: {fileID: 390707635}
   - component: {fileID: 390707634}
   - component: {fileID: 390707636}
+  - component: {fileID: 390707638}
   m_Layer: 0
   m_Name: Rat 5 (Jimmy Jr.)
   m_TagString: Untagged
@@ -4301,6 +4358,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &390707638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390707632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &403704600
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,6 +6233,7 @@ GameObject:
   - component: {fileID: 565225612}
   - component: {fileID: 565225611}
   - component: {fileID: 565225613}
+  - component: {fileID: 565225615}
   m_Layer: 0
   m_Name: Rat 5 (Jimmy Jr.) (1)
   m_TagString: Untagged
@@ -6285,6 +6356,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &565225615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565225609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &576270146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,6 +6959,7 @@ GameObject:
   - component: {fileID: 598733254}
   - component: {fileID: 598733253}
   - component: {fileID: 598733255}
+  - component: {fileID: 598733257}
   m_Layer: 0
   m_Name: 'Rat 2 (Jimmy Jr.) '
   m_TagString: Untagged
@@ -6997,6 +7082,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &598733257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598733251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &599948683
 GameObject:
   m_ObjectHideFlags: 0
@@ -8659,6 +8757,7 @@ GameObject:
   - component: {fileID: 722244640}
   - component: {fileID: 722244639}
   - component: {fileID: 722244641}
+  - component: {fileID: 722244644}
   m_Layer: 0
   m_Name: Rat 4 (Jimmy Jr.)
   m_TagString: Untagged
@@ -8781,6 +8880,19 @@ Transform:
   m_Father: {fileID: 728087697}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722244644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722244638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &728087696
 GameObject:
   m_ObjectHideFlags: 0
@@ -10595,6 +10707,7 @@ GameObject:
   - component: {fileID: 892063385}
   - component: {fileID: 892063386}
   - component: {fileID: 892063387}
+  - component: {fileID: 892063388}
   m_Layer: 0
   m_Name: Ceiling
   m_TagString: Untagged
@@ -10686,6 +10799,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18, y: 8.1}
   m_EdgeRadius: 0
+--- !u!114 &892063388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892063384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &901793030
 GameObject:
   m_ObjectHideFlags: 0
@@ -11281,6 +11407,7 @@ GameObject:
   - component: {fileID: 944617480}
   - component: {fileID: 944617479}
   - component: {fileID: 944617478}
+  - component: {fileID: 944617481}
   m_Layer: 0
   m_Name: Meese 1
   m_TagString: Untagged
@@ -11824,6 +11951,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &944617481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 944617476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &956455334
 GameObject:
   m_ObjectHideFlags: 0
@@ -12069,6 +12209,7 @@ GameObject:
   - component: {fileID: 1075533152}
   - component: {fileID: 1075533151}
   - component: {fileID: 1075533150}
+  - component: {fileID: 1075533153}
   m_Layer: 0
   m_Name: Binary (3)
   m_TagString: Untagged
@@ -12180,6 +12321,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1075533153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075533148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1097295353
 GameObject:
   m_ObjectHideFlags: 0
@@ -12683,6 +12837,7 @@ GameObject:
   - component: {fileID: 1122720646}
   - component: {fileID: 1122720645}
   - component: {fileID: 1122720644}
+  - component: {fileID: 1122720647}
   m_Layer: 0
   m_Name: Binary (1)
   m_TagString: Untagged
@@ -12794,6 +12949,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1122720647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122720642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1125556494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13002,6 +13170,7 @@ GameObject:
   - component: {fileID: 1136211564}
   - component: {fileID: 1136211567}
   - component: {fileID: 1136211568}
+  - component: {fileID: 1136211569}
   m_Layer: 0
   m_Name: Rat (Jimmy Jr.)
   m_TagString: Untagged
@@ -13124,6 +13293,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9614e6ec9864464d8be178c103c3276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1136211569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136211563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1136701918
 GameObject:
   m_ObjectHideFlags: 0
@@ -13446,6 +13628,7 @@ GameObject:
   - component: {fileID: 1151402075}
   - component: {fileID: 1151402074}
   - component: {fileID: 1151402076}
+  - component: {fileID: 1151402078}
   m_Layer: 0
   m_Name: Rat (Jimmy Jr.) (1)
   m_TagString: Untagged
@@ -13568,6 +13751,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1151402078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151402072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1181736038
 GameObject:
   m_ObjectHideFlags: 0
@@ -13972,6 +14168,7 @@ GameObject:
   - component: {fileID: 1199557937}
   - component: {fileID: 1199557936}
   - component: {fileID: 1199557934}
+  - component: {fileID: 1199557938}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -14404,6 +14601,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1199557938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199557932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1208424484
 GameObject:
   m_ObjectHideFlags: 0
@@ -14569,6 +14779,7 @@ GameObject:
   - component: {fileID: 1212122446}
   - component: {fileID: 1212122448}
   - component: {fileID: 1212122447}
+  - component: {fileID: 1212122449}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -14660,6 +14871,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1212122449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212122445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1231607356
 GameObject:
   m_ObjectHideFlags: 0
@@ -14671,6 +14895,7 @@ GameObject:
   - component: {fileID: 1231607360}
   - component: {fileID: 1231607359}
   - component: {fileID: 1231607358}
+  - component: {fileID: 1231607361}
   m_Layer: 0
   m_Name: Meese 2
   m_TagString: Untagged
@@ -15214,6 +15439,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1231607361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231607356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1232293123
 GameObject:
   m_ObjectHideFlags: 0
@@ -16277,6 +16515,7 @@ GameObject:
   - component: {fileID: 1261365217}
   - component: {fileID: 1261365216}
   - component: {fileID: 1261365218}
+  - component: {fileID: 1261365220}
   m_Layer: 0
   m_Name: Rat 3 (Jimmy Jr.) (1)
   m_TagString: Untagged
@@ -16399,6 +16638,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1261365220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1261365214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1269867456
 GameObject:
   m_ObjectHideFlags: 0
@@ -16410,6 +16662,7 @@ GameObject:
   - component: {fileID: 1269867460}
   - component: {fileID: 1269867459}
   - component: {fileID: 1269867458}
+  - component: {fileID: 1269867461}
   m_Layer: 0
   m_Name: Policecar
   m_TagString: Untagged
@@ -16593,6 +16846,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1269867461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269867456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1278863130
 GameObject:
   m_ObjectHideFlags: 0
@@ -16605,6 +16871,7 @@ GameObject:
   - component: {fileID: 1278863133}
   - component: {fileID: 1278863132}
   - component: {fileID: 1278863134}
+  - component: {fileID: 1278863136}
   m_Layer: 0
   m_Name: Tumbleweed
   m_TagString: Untagged
@@ -16717,6 +16984,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1278863136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278863130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1280267424
 GameObject:
   m_ObjectHideFlags: 0
@@ -17097,6 +17377,7 @@ GameObject:
   - component: {fileID: 1331764715}
   - component: {fileID: 1331764714}
   - component: {fileID: 1331764716}
+  - component: {fileID: 1331764717}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -17200,6 +17481,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sizeToShrinkBy: 0.001
+--- !u!114 &1331764717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331764712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1336502528
 GameObject:
   m_ObjectHideFlags: 0
@@ -18143,6 +18437,7 @@ GameObject:
   - component: {fileID: 1380155084}
   - component: {fileID: 1380155086}
   - component: {fileID: 1380155085}
+  - component: {fileID: 1380155087}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -18234,6 +18529,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1380155087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380155083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1403732612
 GameObject:
   m_ObjectHideFlags: 0
@@ -20361,6 +20669,7 @@ GameObject:
   - component: {fileID: 1618024514}
   - component: {fileID: 1618024513}
   - component: {fileID: 1618024515}
+  - component: {fileID: 1618024517}
   m_Layer: 0
   m_Name: Rat 2 (Jimmy Jr.) (1)
   m_TagString: Untagged
@@ -20483,6 +20792,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1618024517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1618024511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1621319138
 GameObject:
   m_ObjectHideFlags: 0
@@ -20494,6 +20816,7 @@ GameObject:
   - component: {fileID: 1621319142}
   - component: {fileID: 1621319141}
   - component: {fileID: 1621319140}
+  - component: {fileID: 1621319143}
   m_Layer: 0
   m_Name: Binary
   m_TagString: Untagged
@@ -20605,6 +20928,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621319143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1621319138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1623067645
 GameObject:
   m_ObjectHideFlags: 0
@@ -21563,6 +21899,7 @@ GameObject:
   - component: {fileID: 1667578889}
   - component: {fileID: 1667578888}
   - component: {fileID: 1667578887}
+  - component: {fileID: 1667578890}
   m_Layer: 0
   m_Name: Binary (2)
   m_TagString: Untagged
@@ -21674,6 +22011,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1667578890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667578885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1677852868
 GameObject:
   m_ObjectHideFlags: 0
@@ -24398,6 +24748,7 @@ GameObject:
   - component: {fileID: 1916956545}
   - component: {fileID: 1916956544}
   - component: {fileID: 1916956546}
+  - component: {fileID: 1916956548}
   m_Layer: 0
   m_Name: 'Rat 3 (Jimmy Jr.) '
   m_TagString: Untagged
@@ -24520,6 +24871,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1916956548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1916956542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &1921319048
 GameObject:
   m_ObjectHideFlags: 0
@@ -27549,6 +27913,7 @@ GameObject:
   - component: {fileID: 2082190889}
   - component: {fileID: 2082190888}
   - component: {fileID: 2082190890}
+  - component: {fileID: 2082190892}
   m_Layer: 0
   m_Name: Tumbleweed (1)
   m_TagString: Untagged
@@ -27661,6 +28026,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2082190892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082190886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34aa1308c574fd49a427909bf751015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  catManager: {fileID: 0}
 --- !u!1 &2083593317
 GameObject:
   m_ObjectHideFlags: 0

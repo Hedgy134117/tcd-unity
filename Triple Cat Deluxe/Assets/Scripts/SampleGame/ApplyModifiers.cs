@@ -35,6 +35,7 @@ public class ApplyModifiers : MonoBehaviour {
 
     public void applyModifiers()
     {
+        // get managers
         if (GameObject.Find("CatManager") != null)
         {
             catManager = GameObject.Find("CatManager").GetComponent<CatManager>();
@@ -46,6 +47,12 @@ public class ApplyModifiers : MonoBehaviour {
             p1 = sausage;
             p2 = queso;
         }
+        if(GameObject.Find("DevModeManager").GetComponent<developerMode>().devMode == false)
+        {
+            getSettings();
+        }
+
+
 
         // multiply cats size by modifier
         p1.transform.localScale *= catSize;

@@ -44,7 +44,7 @@ public class WinManager : MonoBehaviour {
     private void LateUpdate()
     {
 	// get managers
-        if (GameObject.Find("SettingsManager") != null)
+        if (GameObject.Find("SettingsManager") != null && GameObject.Find("DevModeManager").GetComponent<developerMode>().devMode == false)
         {
             settings = GameObject.Find("SettingsManager").GetComponent<AllSettings>();
             pointsToWin = settings.pointsToWin;

@@ -75,7 +75,7 @@ public class WinSampleGame : MonoBehaviour {
         if (winner == "")
         {
             // If the player is below the floor
-            if (p1.transform.position.y <= -5f)
+            if (p1.transform.position.y <= floor.transform.position.y-2.12f)
             {
                 winner = "P2";
                 // look at all cards and see which one is the current one
@@ -90,7 +90,7 @@ public class WinSampleGame : MonoBehaviour {
                 
             }
             // if the player is p2, p1 wins
-            else if (p2.transform.position.y <= -5f)
+            else if (p2.transform.position.y <= floor.transform.position.y - 2.12f)
             {
                 winner = "P1";
                 // look at all cards and see which one is the current one
