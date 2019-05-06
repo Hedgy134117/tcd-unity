@@ -148,6 +148,8 @@ MonoBehaviour:
   devControlsButton: {fileID: 21300000, guid: e92ce5a77774b76409e098c2cd4ceb02, type: 3}
   devHTPButton: {fileID: 21300000, guid: f5c1ebe2e5cd8d542b362d02818daf70, type: 3}
   devCreditsButton: {fileID: 21300000, guid: 955ffb0c48030934e870e5e2057640c9, type: 3}
+  devCanvas: {fileID: 0}
+  floor: {fileID: 0}
 --- !u!4 &94897820
 Transform:
   m_ObjectHideFlags: 0
@@ -485,7 +487,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
