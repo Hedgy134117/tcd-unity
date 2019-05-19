@@ -1186,7 +1186,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.9490197, g: 0.49803925, b: 0.12941177, a: 1}
-      key1: {r: 0.9568628, g: 0.57254905, b: 0.25490198, a: 1}
+      key1: {r: 0.9568628, g: 0.57254905, b: 0.25490198, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1202,7 +1202,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -1505,7 +1505,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.93725497, g: 0.6392157, b: 0.8313726, a: 1}
-      key1: {r: 0.9568628, g: 0.7607844, b: 0.89019614, a: 1}
+      key1: {r: 0.9568628, g: 0.7607844, b: 0.89019614, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1521,7 +1521,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -1829,7 +1829,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.45098042, g: 0.8941177, b: 0.41176474, a: 1}
-      key1: {r: 0.46274513, g: 0.8980393, b: 0.42352945, a: 1}
+      key1: {r: 0.46274513, g: 0.8980393, b: 0.42352945, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1845,7 +1845,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -2662,7 +2662,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.5921569, g: 0.8941177, b: 0.92549026, a: 1}
-      key1: {r: 0.7058824, g: 0.92549026, b: 0.9490197, a: 1}
+      key1: {r: 0.7058824, g: 0.92549026, b: 0.9490197, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -2678,7 +2678,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -3822,7 +3822,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.8980393, g: 0.82745105, b: 0.41960788, a: 1}
-      key1: {r: 0.90196085, g: 0.8313726, b: 0.43137258, a: 1}
+      key1: {r: 0.90196085, g: 0.8313726, b: 0.43137258, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3838,7 +3838,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -4435,7 +4435,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.8000001, g: 0.40784317, b: 0.8941177, a: 1}
-      key1: {r: 0.78823537, g: 0.3803922, b: 0.89019614, a: 1}
+      key1: {r: 0.78823537, g: 0.3803922, b: 0.89019614, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4451,7 +4451,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -5997,7 +5997,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.97647065, g: 0.91372555, b: 0.5411765, a: 1}
-      key1: {r: 0.9803922, g: 0.9333334, b: 0.6431373, a: 1}
+      key1: {r: 0.9803922, g: 0.9333334, b: 0.6431373, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6013,7 +6013,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -7948,7 +7948,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.909804, g: 0.48627454, b: 0.48627454, a: 1}
-      key1: {r: 0.909804, g: 0.49411768, b: 0.49411768, a: 1}
+      key1: {r: 0.909804, g: 0.49411768, b: 0.49411768, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -7964,7 +7964,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -13250,7 +13250,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.8196079, g: 0.8196079, b: 0.8196079, a: 1}
-      key1: {r: 0.854902, g: 0.854902, b: 0.854902, a: 1}
+      key1: {r: 0.854902, g: 0.854902, b: 0.854902, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -13266,7 +13266,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -17115,7 +17115,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.91372555, g: 0.69411767, b: 0.5137255, a: 1}
-      key1: {r: 0.92549026, g: 0.7294118, b: 0.5686275, a: 1}
+      key1: {r: 0.92549026, g: 0.7294118, b: 0.5686275, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -17131,7 +17131,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -19508,7 +19508,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.45882356, g: 0.5294118, b: 0.90196085, a: 1}
-      key1: {r: 0.4784314, g: 0.54901963, b: 0.909804, a: 1}
+      key1: {r: 0.4784314, g: 0.54901963, b: 0.909804, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -19524,7 +19524,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 16384
       atime2: 0
       atime3: 0
       atime4: 0
@@ -29654,7 +29654,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.6627451, g: 0.94117653, b: 0.75294125, a: 1}
-      key1: {r: 0.5568628, g: 0.9215687, b: 0.6745098, a: 1}
+      key1: {r: 0.5568628, g: 0.9215687, b: 0.6745098, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -29670,8 +29670,8 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
+      atime1: 16384
+      atime2: 16384
       atime3: 0
       atime4: 0
       atime5: 0
@@ -29679,7 +29679,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
