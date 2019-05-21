@@ -9,6 +9,8 @@ public class AddMovingCamera : MonoBehaviour {
 
     private AllSettings settings;
     public bool dynamicCamera;
+    public GameObject floor;
+
 
     private void Start()
     {
@@ -28,6 +30,11 @@ public class AddMovingCamera : MonoBehaviour {
             if (sampleGame.activeInHierarchy == true && this.GetComponent<MovingCamera>() == false)
             {
                 this.gameObject.AddComponent<MovingCamera>();
+
+                if (GameObject.Find("StageManager") == null)
+                {
+                    this.gameObject.GetComponent<MovingCamera>().floor = this.floor;
+                }
             }
 	    // if samplegame is not active and this object does have moving camera then delete moving camera
 	    // (this is because the camera won't be able to find the cats)

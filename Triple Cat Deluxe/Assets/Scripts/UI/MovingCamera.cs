@@ -17,6 +17,8 @@ public class MovingCamera : MonoBehaviour
 
     Camera mainCamera;
 
+    public GameObject floor;
+
     void Awake()
     {
         mainCamera = GetComponent<Camera>();
@@ -29,7 +31,16 @@ public class MovingCamera : MonoBehaviour
         {
             targets[0] = GameObject.FindGameObjectWithTag("currentp1").transform;
             targets[1] = GameObject.FindGameObjectWithTag("currentp2").transform;
-            targets[2] = GameObject.FindGameObjectWithTag("Floor").transform;
+
+            // get floor
+            if (GameObject.Find("StageManager") != null)
+            {
+                targets[2] = GameObject.Find("StageManager").GetComponent<StageManager>().currentStage.transform;
+            }
+            else
+            {
+                targets[2] = floor.transform;
+            }
         }
 
         minimumOrthographicSize = 5f;

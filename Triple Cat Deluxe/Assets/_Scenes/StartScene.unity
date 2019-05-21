@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeLeft: 3
   devMode: 0
-  devModeBG: {fileID: 21300000, guid: 801a058a881bc6840bcb297c458b90c3, type: 3}
+  devModeBG: {fileID: 21300000, guid: ff6280568f76bc54bb048dc81fe71605, type: 3}
   devPlayButton: {fileID: 21300000, guid: 86d663190c97ff040be164ce140a2e87, type: 3}
   devControlsButton: {fileID: 21300000, guid: e92ce5a77774b76409e098c2cd4ceb02, type: 3}
   devHTPButton: {fileID: 21300000, guid: f5c1ebe2e5cd8d542b362d02818daf70, type: 3}
@@ -211,7 +211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15843558, y: 0.13833334}
   m_AnchorMax: {x: 0.15843558, y: 0.13833334}
-  m_AnchoredPosition: {x: -38.4, y: -41.4}
+  m_AnchoredPosition: {x: -38.40039, y: -41.399994}
   m_SizeDelta: {x: 201.6, y: 55.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256863105
@@ -819,7 +819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15843558, y: 0.13833334}
   m_AnchorMax: {x: 0.15843558, y: 0.13833334}
-  m_AnchoredPosition: {x: 15.599976, y: 233}
+  m_AnchoredPosition: {x: 15.599609, y: 233}
   m_SizeDelta: {x: 284, y: 91.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794125144
@@ -1001,7 +1001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15843558, y: 0.13833334}
   m_AnchorMax: {x: 0.15843558, y: 0.13833334}
-  m_AnchoredPosition: {x: 9.700012, y: 122}
+  m_AnchoredPosition: {x: 9.700195, y: 122}
   m_SizeDelta: {x: 274.4, y: 55.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832243175

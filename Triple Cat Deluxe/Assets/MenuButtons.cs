@@ -28,6 +28,10 @@ public class MenuButtons : MonoBehaviour {
         {
             Destroy(GameObject.Find("SettingsManager"));
         }
+        if (GameObject.Find("StageManager") != null)
+        {
+            Destroy(GameObject.Find("StageManager"));
+        }
         SceneManager.LoadScene(SceneUtility.GetBuildIndexByScenePath("_Scenes/CharacterSelectScene"));
 
 

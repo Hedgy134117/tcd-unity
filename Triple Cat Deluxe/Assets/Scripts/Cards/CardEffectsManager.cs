@@ -24,6 +24,7 @@ public class CardEffectsManager : MonoBehaviour {
 
     // any assets from the area
     [Header("SampleGame Assets")]
+    public StageManager stageManager;
     public GameObject floor;
 
     // any other assets needed (such as ones for card effects)
@@ -68,6 +69,13 @@ public class CardEffectsManager : MonoBehaviour {
             // if there is no cat manager (aka no one selected players) then it will default to Sausage and Queso
             p1 = GameObject.Find("Sausage");
             p2 = GameObject.Find("Queso");
+        }
+
+        // get floor
+        if (GameObject.Find("StageManager") != null)
+        {
+            stageManager = GameObject.Find("StageManager").GetComponent<StageManager>();
+            floor = stageManager.currentStage;
         }
     }
 

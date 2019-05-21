@@ -11,6 +11,7 @@ public class ApplyModifiers : MonoBehaviour {
     public GameObject sausage;
     public GameObject queso;
     public GameObject floor;
+    public StageManager stageManager;
 
     [Header("Modifiers")]
     public float catSize = 1f;
@@ -30,6 +31,13 @@ public class ApplyModifiers : MonoBehaviour {
             catSpeed = settings.catSpeed;
             catJumps = settings.catJumps;
             thinPlatform = settings.thinPlatform;
+        }
+
+        // get floor
+        if (GameObject.Find("StageManager") != null)
+        {
+            stageManager = GameObject.Find("StageManager").GetComponent<StageManager>();
+            floor = stageManager.currentStage;
         }
     }
 

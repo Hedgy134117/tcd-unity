@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/CharacterSelectScene.unity
     guid: 59013598c0e361f49bbf71b706279560
   - enabled: 1
+    path: Assets/_Scenes/FloorSelectScene.unity
+    guid: 19eb0df6076daa346b76a6e00154fa41
+  - enabled: 1
     path: Assets/_Scenes/SettingsScene.unity
     guid: ebe98406ceddb064caeb4ea4027161ad
   - enabled: 1

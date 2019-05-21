@@ -34,6 +34,10 @@ public class WinSampleGame : MonoBehaviour {
     public GameObject ceiling;
 
     public GameObject floor;
+    public Vector3 floorPosition;
+    public Vector3 floorScale;
+    public Quaternion floorRotation;
+    public StageManager stageManager;
 
     [Header("Other Assets")]
     public string winner;
@@ -59,8 +63,18 @@ public class WinSampleGame : MonoBehaviour {
             p2 = GameObject.Find("Queso");
         }
 
+        // get floor
+        if (GameObject.Find("StageManager") != null)
+        {
+            stageManager = GameObject.Find("StageManager").GetComponent<StageManager>();
+            floor = stageManager.currentStage;
+        }
+
         p1s = p1.transform.localScale;
         p2s = p2.transform.localScale;
+        floorScale = floor.transform.localScale;
+        floorRotation = floor.transform.localRotation;
+        floorPosition = floor.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -177,10 +191,9 @@ public class WinSampleGame : MonoBehaviour {
         p2.GetComponent<Rigidbody2D>().gravityScale = 1f;
 
         // reset floor scale and rotation and material
-        floor.transform.localScale = new Vector2(0.9f, 0.4f);
-        floor.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
-        floor.transform.position = new Vector3(0f, -2.88f, 0f);
-        floor.GetComponent<BoxCollider2D>().sharedMaterial = null;
+        floor.transform.localScale = floorScale;
+        floor.transform.localRotation = floorRotation;
+        floor.transform.localPosition = floorPosition;
 
         // reset bg
         bg.sprite = bgImage;
