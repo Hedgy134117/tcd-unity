@@ -6,6 +6,8 @@ public class ShrinkingFloor : MonoBehaviour {
 
     public float sizeToShrinkBy;
 
+    public List<GameObject> triplePlatforms;
+
     // Update is called once per frame
     void Update () {
         switch(this.gameObject.name)
@@ -41,15 +43,18 @@ public class ShrinkingFloor : MonoBehaviour {
                 }
                 break;
             case "Triple Platforms":
-                // if the scale of the floor is greater than or equal to 0.01 then shrink the floor
-                if (transform.localScale.x >= 0.01f)
+                foreach (var platform in triplePlatforms)
                 {
-                    transform.localScale -= new Vector3(sizeToShrinkBy, 0f, 0f);
-                }
-                // otherwise rotate the floor
-                else
-                {
-                    transform.Rotate(Vector3.one);
+                    // if the scale of the floor is greater than or equal to 0.01 then shrink the floor
+                    if (platform.transform.localScale.x >= 0.01f)
+                    {
+                        platform.transform.localScale -= new Vector3(sizeToShrinkBy, 0f, 0f);
+                    }
+                    // otherwise rotate the floor
+                    else
+                    {
+                        platform.transform.Rotate(Vector3.one);
+                    }
                 }
                 break;
         }
