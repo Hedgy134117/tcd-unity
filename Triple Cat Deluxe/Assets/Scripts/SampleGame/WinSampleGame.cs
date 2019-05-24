@@ -34,6 +34,7 @@ public class WinSampleGame : MonoBehaviour {
     public GameObject ceiling;
 
     public GameObject floor;
+    public List<GameObject> tripleFloor;
     public Vector3 floorPosition;
     public Vector3 floorScale;
     public Quaternion floorRotation;
@@ -194,6 +195,11 @@ public class WinSampleGame : MonoBehaviour {
         floor.transform.localScale = floorScale;
         floor.transform.localRotation = floorRotation;
         floor.transform.localPosition = floorPosition;
+        foreach (var floor in tripleFloor)
+        {
+            floor.transform.localScale = new Vector3(0.9f, 0.4f, 1f);
+            floor.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
+        }
 
         // reset bg
         bg.sprite = bgImage;
