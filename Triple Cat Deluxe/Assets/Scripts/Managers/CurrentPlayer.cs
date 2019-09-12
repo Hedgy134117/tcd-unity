@@ -26,12 +26,12 @@ public class CurrentPlayer : MonoBehaviour {
             {
                 // if p1 is selecting then the text says p1
                 case 1:
-                    text.text = "PLAYER ONE";
+                    text.text = "PLAYER 1";
                     break;
 
                 // if p2 is selecting then the text says p2
                 case 2:
-                    text.text = "PLAYER TWO";
+                    text.text = "PLAYER 2";
                     break;
             }
         }

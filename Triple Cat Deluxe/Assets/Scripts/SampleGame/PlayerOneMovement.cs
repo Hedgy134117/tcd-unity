@@ -9,218 +9,243 @@ public class PlayerOneMovement : MonoBehaviour {
     public float jumpHeight = 6.25f;
     public float speed = 3f;
 
-    private bool floored;
+    public bool floored;
 
     public bool flyingEnabled;
 
     private void Awake()
     {
-	// get rigidbody and set flying to false
+	    // get rigidbody and set flying to false
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         flyingEnabled = false;
     }
 
+    public void Jump(GameObject cat)
+    {
+        cat.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+        floored = false;
+    }
+
+    public void Fly(GameObject cat)
+    {
+        cat.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+    }
+
+    public void Left(GameObject cat)
+    {
+        cat.GetComponent<Rigidbody2D>().AddForce(new Vector2(-speed, 0), ForceMode2D.Impulse);
+
+        // check if cat is facing left or right and change their looks based on it
+        switch (cat.name)
+        {
+            case "Sausage":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Queso":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Canada":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "JohnJonJean":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Owo":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Jupiter":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Gwendoline":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Igor":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Texas":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Washington":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Qwerty":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Toothpick":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+        }
+    }
+
+    public void Right(GameObject cat)
+    {
+        cat.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed, 0), ForceMode2D.Impulse);
+
+        // check if cat is facing left or right and change their looks based on it
+        switch (cat.name)
+        {
+            case "Sausage":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Queso":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Canada":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "JohnJonJean":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Owo":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Jupiter":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Gwendoline":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Igor":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Texas":
+                if (cat.transform.localScale.x < 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Washington":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Qwerty":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+
+            case "Toothpick":
+                if (cat.transform.localScale.x > 0)
+                {
+                    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
+                }
+                break;
+        }
+    }
+
+    public void Down(GameObject cat)
+    {
+        cat.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -jumpHeight), ForceMode2D.Impulse);
+    }
+
     // Update is called once per frame
     void Update () {
-	// movement
-	// checks if floored so cat can jump
-	// or if flying is enabled then allow infinite jumps
-	if(Input.GetKeyDown("w") && floored == true && flyingEnabled == false)
+	    // movement
+	    // checks if floored so cat can jump
+	    // or if flying is enabled then allow infinite jumps
+	    if(Input.GetKeyDown("w") && floored == true && flyingEnabled == false)
         {
-            rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
-            floored = false;
+            Jump(this.gameObject);
         }
         else if(Input.GetKeyDown("w") && flyingEnabled == true)
         {
-            rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+            Fly(this.gameObject);
         }
         if(Input.GetKeyDown("a"))
         {
-            rb.AddForce(new Vector2(-speed, 0), ForceMode2D.Impulse);
-
-            // check if cat is facing left or right and change their looks based on it
-            switch (this.gameObject.name)
-            {
-                case "Sausage":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Queso":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Canada":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "JohnJonJean":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Owo":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Jupiter":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Gwendoline":
-                    if(transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Igor":
-                    if(transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Texas":
-                    if(transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Washington":
-                    if(transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Qwerty":
-                    if(transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Toothpick":
-                    if(transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-            }
+            Left(this.gameObject);
         }
         if(Input.GetKeyDown("d"))
         {
-            rb.AddForce(new Vector2(speed, 0), ForceMode2D.Impulse);
-
-            // check if cat is facing left or right and change their looks based on it
-            switch (this.gameObject.name)
-            {
-                case "Sausage":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Queso":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Canada":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "JohnJonJean":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Owo":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Jupiter":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Gwendoline":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Igor":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Texas":
-                    if (transform.localScale.x < 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Washington":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Qwerty":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-
-                case "Toothpick":
-                    if (transform.localScale.x > 0)
-                    {
-                        transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1f, 1f, 1f));
-                    }
-                    break;
-            }
+            Right(this.gameObject);
         }
         if(Input.GetKeyDown("s"))
         {
-            rb.AddForce(new Vector2(0, -jumpHeight), ForceMode2D.Impulse);
+            Down(this.gameObject);
         }
 	}
 

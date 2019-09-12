@@ -42,7 +42,7 @@ public class WinSampleGame : MonoBehaviour {
 
     [Header("Other Assets")]
     public string winner;
-
+    public float deathY;
 
 
     public void GetVariables()
@@ -90,7 +90,7 @@ public class WinSampleGame : MonoBehaviour {
         if (winner == "")
         {
             // If the player is below the floor
-            if (p1.transform.position.y <= floor.transform.position.y-2.12f)
+            if (p1.transform.position.y <= deathY)
             {
                 winner = "P2";
                 // look at all cards and see which one is the current one
@@ -105,7 +105,7 @@ public class WinSampleGame : MonoBehaviour {
                 
             }
             // if the player is p2, p1 wins
-            else if (p2.transform.position.y <= floor.transform.position.y - 2.12f)
+            else if (p2.transform.position.y <= deathY)
             {
                 winner = "P1";
                 // look at all cards and see which one is the current one
